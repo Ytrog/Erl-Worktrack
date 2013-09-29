@@ -16,3 +16,7 @@ add(Item) ->
     
 prompt(Prompt) ->
     %% displays prompt and let people type in an answer
+    Input = io:get_line(standard_io, Prompt),
+    % strip Input from newline
+    string:strip(Input, both, $\n).
+    
