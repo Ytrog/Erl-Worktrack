@@ -1,1 +1,1 @@
-%-record().
+%-record(item, {name, date, hours}).
